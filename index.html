@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kira Clinic</title>
+    <link rel="stylesheet" href="style.css"/>        
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-area">
+                <img src="life.png" alt="Kira Logo" class="logo" />
+                <h1>Kira Clinic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Our Doctors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pattern SHEJA.html">Paternship</a></li>
+                </ul>
+            </nav>
+            
+        <div class="hero">
+            <img src="clinic-background.jpg" alt="">
+            <div class="hero-text">
+                <h2>Welcome to Kira Clinic</h2>
+                <p>We offer consultations and treat various sicknesses</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Get Started</a>
+                    <a href="#" class="btn secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+
+
+        <div class="services-grid">
+            <h2>Our Services</h2>
+
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="j.jpg" alt="Treatment for Illness ">
+                </div>
+                <div class="service-content">
+                    <h3>Treatment for</h3>
+                    <div class="green">
+                        <h3>illness</h3>
+                    </div>
+                    <p>Comprehensive medical care for various illnesses and conditions. Our experienced doctors provide
+                        personalized treatment plans using the latest medical techniques and equipment to ensure the
+                        best possible outcomes for our patients.</p>
+
+                </div>
+            </div>
+
+
+            <div class="service-item">
+                <div class="service-image">
+                    <div class="lab">
+                        <img src="pexels.jpg" alt="Basic Laboratory">
+                    </div>
+                </div>
+                <div class="micro">
+                    <h3>Basic</h3>
+                    <div class="labo">
+                        <h3>laboratory</h3>
+                    </div>
+                    <p>State-of-the-art laboratory services providing accurate and timely diagnostic tests. From blood
+                        work to specialized testing, our modern equipment ensures precise results to support your
+                        healthcare needs and treatment decisions.</p>
+                </div>
+            </div>
+
+
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="illness.jpg" alt="Vaccinations for all">
+                </div>
+                <div class="service-content">
+                    <h3><span class="highlight">Vaccinations</span> for all</h3>
+                    <p>Complete vaccination services for all ages, from routine childhood immunizations to travel
+                        vaccines and flu shots. Our qualified healthcare professionals ensure safe and effective
+                        immunization programs following international standards.</p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KIRA CLINIC</h3>
+                <p>Rwanda, Nyagatare District</p>
+                <p>Street: RV 20 ST</p>
+                <br>
+                <p>Phone: ‪+256 767 858 868‬</p>
+                <p>Email: info@kiraclinic.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <a href="#consultation"> > Consultation</a>
+                <a href="#hospital"> > Hospital</a>
+                <a href="#dental"> > Dental</a>
+                <a href="#consultation2"> > Consultation</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <a href="#facebook">> Facebook</a>
+                <a href="#twitter"> > Twitter</a>
+                <a href="#linkedin">> LinkedIn</a>
+                <a href="#youtube"> > YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Copyright, Kira Clinic, Ltd</p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            alert('Thank you for your message! We will get back to you soon.');
+
+
+            this.reset();
+        });
+
+
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</body>
+
+</html>

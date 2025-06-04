@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KIRA Clinic</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+       
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        
+        header #branding {
+            float: left;
+        }
+        
+        header #branding h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        
+        header .highlight, header .current a {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        header a:hover {
+            color: #ffc107;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: #198754;
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        
+        /* About Content */
+        .about-content {
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Mission/Vision */
+        .mission-vision {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .mission, .vision {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+        }
+        
+        .mission {
+            border-top: 5px solid #0d6efd;
+        }
+        
+        .vision {
+            border-top: 5px solid #198754;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        /* Responsive */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            
+            header {
+                padding-bottom: 20px;
+            }
+            
+            .about-text, .about-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">KIRA</span> Clinic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>About KIRA Clinic</h1>
+            <p>Providing quality healthcare to Nyagatare since 2010</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <section class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>KIRA Clinic was founded in 2010 with the mission to provide accessible, high-quality healthcare to the Nyagatare community. What began as a small practice has grown into a comprehensive health center serving thousands of patients each year.</p>
+                <p>Our name "KIRA" stands for "Knowledge, Integrity, Respect, and Accountability" - values that guide every aspect of our work. We believe in treating the whole person, not just the illness, and in building long-term relationships with our patients.</p>
+                <p>Over the years, we've invested in advanced medical equipment and continuous staff training to ensure we deliver the best possible care. Our team of dedicated healthcare professionals is committed to staying at the forefront of medical knowledge while maintaining the personal touch that makes us unique.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="KIRA Clinic Building">
+            </div>
+        </section>
+        
+        <section class="mission-vision">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To provide compassionate, high-quality healthcare services that meet the needs of our community through clinical excellence, innovative practices, and a commitment to continuous improvement.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be the leading healthcare provider in Nyagatare District, recognized for exceptional patient care, medical expertise, and community health leadership.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>KIRA Clinic &copy; 2025 | Nyagatare District, Rwanda</p>
+    </footer>
+</body>
+</html>
